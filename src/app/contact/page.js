@@ -69,7 +69,8 @@ const ContactUs = ({ }) => {
                     {/* Right illustration */}
                     <div className="illustration-right"></div>
                 </div>
-                <div className="section-end-space" />
+                <div className="double-space-container" />
+                <div className="double-space-container" />
             </div>
             {/* Header Section End */}
 

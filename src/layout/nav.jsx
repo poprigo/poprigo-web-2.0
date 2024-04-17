@@ -9,13 +9,14 @@ export default function Nav({ }) {
                 <div className="nav-links">
                     <NavLink href="/" text="Home" />
                     <NavLink href="/about" text="About Us" />
-                    <NavLink href="/portfolio" text="Portfolio" />
+                    <NavLink href="/service" text="Service" />
+                    {/* <NavLink href="/portfolio" text="Portfolio" /> */}
                 </div>
                 <Logo />
                 <div className="nav-links" style={{ justifyContent: "flex-end" }}>
                     <NavLink href="/blog" text="Blog" />
                     <NavLink href="/contact" text="Contact" />
-                    <Button title={"LETS TALK"} />
+                    <Button link="/contact" title={"LETS TALK"} />
                 </div>
             </div>
         </div>

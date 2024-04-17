@@ -34,10 +34,10 @@ export default function Home() {
           <TitleText title={brandTitle} subTitle={brandSubText} />
 
           <div className="brand-box-container">
-            <BrandBox title={brandText.researchTitle} subTitle={brandText.researchSubText} />
-            <BrandBox title={brandText.designTitle} subTitle={brandText.designSubText} />
-            <BrandBox title={brandText.buildTitle} subTitle={brandText.buildSubText} />
-            <BrandBox title={brandText.launchTitle} subTitle={brandText.launchSubText} />
+            <BrandBox no="1" title={brandText.researchTitle} subTitle={brandText.researchSubText} />
+            <BrandBox no="2" title={brandText.designTitle} subTitle={brandText.designSubText} />
+            <BrandBox no="3" title={brandText.buildTitle} subTitle={brandText.buildSubText} />
+            <BrandBox no="4" title={brandText.launchTitle} subTitle={brandText.launchSubText} />
           </div>
 
           <div className="section-end-space" />
@@ -57,9 +57,9 @@ export default function Home() {
             {/* <Button title="ABOUT US" /> */}
           </div>
           <div className="about-images">
-            <div className="about-image" />
-            <div className="about-image" />
-            <div className="about-image" />
+            <div className="about-image about-image-one" />
+            <div className="about-image about-image-two" />
+            <div className="about-image about-image-three" />
           </div>
         </div>
       </div>
@@ -70,7 +70,10 @@ export default function Home() {
         <div className="container">
           <TitleText title={serviceTitle} subTitle={serviceSubTitle} />
           <div className="service-container">
-            <div className="service-images" />
+            <div className={`service-images ${
+              selectedService == 1 ? "service-images-one": selectedService == 2? "service-images-two" : selectedService == 3? "service-images-three" :
+              selectedService == 4 ? "service-images-four" : selectedService == 5? "service-images-five" : "service-images-six"
+            }`} />
             <div className="service-list">
               {serviceList.map((item, index) => (
                 <div key={index} onClick={() => setSelectedService(item.id)}>

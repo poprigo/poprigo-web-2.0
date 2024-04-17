@@ -18,6 +18,17 @@ export default function About({ }) {
                 </div>
                 <div className="ap-hero-image" />
             </div>
+            <div className="ap-why">
+                <div className="container">
+                    <TitleText title={whyTitle} subTitle={whySubTitle} />
+                    <div className="why-box-container">
+                        <WhyCard no="1" title={budgeTitle} description={budgeDescription} />
+                        <WhyCard no="2" title={VersatileTitle} description={VersatileDescription} />
+                        <WhyCard no="3" title={MarketingTitle} description={MarketingDescription} />
+                        <WhyCard no="4" title={AdvisorsTitle} description={AdvisorsDescription} />
+                    </div>
+                </div>
+            </div>
             <div className="ap-vision">
                 <div className="container ap-vision-container">
                     <Image
@@ -37,17 +48,6 @@ export default function About({ }) {
                         }}
                     />
                     <TitleText title={visoinTitle} subTitle={visionSubTitle} />
-                </div>
-            </div>
-            <div className="ap-why">
-                <div className="container">
-                    <TitleText title={whyTitle} subTitle={whySubTitle} />
-                    <div className="why-box-container">
-                        <WhyCard no="1" title={budgeTitle} description={budgeDescription} />
-                        <WhyCard no="2" title={VersatileTitle} description={VersatileDescription} />
-                        <WhyCard no="3" title={MarketingTitle} description={MarketingDescription} />
-                        <WhyCard no="4" title={AdvisorsTitle} description={AdvisorsDescription} />
-                    </div>
                 </div>
             </div>
         </div>

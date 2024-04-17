@@ -22,7 +22,7 @@ export default function Blog({ }) {
                     <SmallBlog />
                 </div>
             </div>
-            {/* <div className="section-end-space" /> */}
+            <div className="section-end-space" />
 
             <div className="blog-box-main-container">
                 <div className="container">

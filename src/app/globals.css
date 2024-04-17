@@ -32,7 +32,7 @@ body {
 
 main {
   position: relative;
-  background-color: var(--background-color);
+  background-color: var(--second-background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,7 +124,7 @@ main {
   align-items: center;
   justify-content: space-between;
   margin: 1vw 0;
-  background-color: var(--background-color);
+  background-color: var(--second-background-color);
 }
 
 .nav-links {
@@ -153,13 +153,15 @@ main {
   height: 3vw;
   width: 10vw;
   border-radius: 100px;
+  cursor: pointer;
 }
 
-.talk-btn>span {
+.talk-btn-text {
   color: #232323;
   font-size: 0.9vw;
   font-weight: 600;
   letter-spacing: 0.2vw;
+  text-decoration: none;
 }
 
 /* Navigation Bar End */
@@ -259,6 +261,36 @@ main {
   border-radius: 1.5vw;
 }
 
+.brand-icon-cover{
+display: flex;
+align-items: center;
+}
+
+.brand-icon{
+  height: 2.5vw;
+  width: 2.5vw;
+  background-image: url('/assets/images/idea.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 1vw;
+}
+
+.brand-icon-one{
+  background-image: url('/assets/images/idea.gif');
+}
+
+.brand-icon-two{
+  background-image: url('/assets/images/paint-palette.gif');
+}
+
+.brand-icon-three{
+  background-image: url('/assets/images/html.gif');
+}
+
+.brand-icon-four{
+  background-image: url('/assets/images/rocket.gif');
+}
+
 .sub-title {
   font-weight: 600;
   font-size: 2vw;
@@ -275,6 +307,7 @@ main {
 }
 
 .learn-more-text {
+  cursor: pointer;
   font-size: 1vw;
 }
 
@@ -333,12 +366,23 @@ main {
 .about-image {
   height: 26vw;
   width: 18vw;
-  border: #93876e solid 2px;
+  /* border: #93876e solid 2px; */
   background-color: #efb61b;
-  background-image: url('/assets/images/about2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.5vw;
+}
+
+.about-image-one{
+  background-image: url('/assets/images/a1.jpg');
+}
+
+.about-image-two{
+  background-image: url('/assets/images/a2.jpg');
+}
+
+.about-image-three{
+  background-image: url('/assets/images/a3.jpg');
 }
 
 /* About Section End */
@@ -363,10 +407,32 @@ main {
 .service-images {
   width: 60%;
   height: 30vw;
-  background-color: #efb61a;
-  background-image: url("/assets/images/about2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+}
+.service-images-one{
+  background-image: url("/assets/images/uiux.png");
+}
+
+.service-images-two{
+  background-image: url("/assets/images/mobile.png");
+}
+
+.service-images-three{
+  background-image: url("/assets/images/website.png");
+}
+
+.service-images-four{
+  background-image: url("/assets/images/software.png");
+}
+
+.service-images-five{
+  background-image: url("/assets/images/shopify.png");
+}
+
+.service-images-six{
+  background-image: url("/assets/images/frontend.png");
 }
 
 .service-list {
@@ -699,7 +765,7 @@ li>a:hover {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: var(--background-color);
+  background-color: var(--second-background-color);
 }
 
 .ap-container {
@@ -859,7 +925,7 @@ li>a:hover {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: var(--background-color);
+  background-color: var(--second-background-color);
 }
 
 .form-row {
@@ -1059,7 +1125,7 @@ textarea:focus {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: var(--background-color);
+  background-color: var(--second-background-color);
 }
 
 .blog-page-container {

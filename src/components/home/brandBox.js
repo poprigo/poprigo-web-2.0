@@ -1,10 +1,13 @@
-export default function BrandBox({ title = "", subTitle = "" }) {
+export default function BrandBox({ title = "", subTitle = "", no }) {
     return (
         <div className="brand-box">
-            {/* Title Text */}
-            <h1 className="sub-title">
-                {title}
-            </h1>
+            <div className="brand-icon-cover">
+                <div className={`brand-icon ${no == 1 ? "brand-icon-one" : no == 2 ? "brand-icon-two" : no == 3 ? "brand-icon-three" : "brand-icon-four"}`} />
+                {/* Title Text */}
+                <h1 className="sub-title">
+                    {title}
+                </h1>
+            </div>
 
             <div className="space-container" />
 

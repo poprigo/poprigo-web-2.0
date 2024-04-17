@@ -1,7 +1,11 @@
-export default function Button({ title }) {
+import Link from 'next/link';
+
+export default function Button({ title, link }) {
     return (
         <div className="talk-btn">
-            <span>{title}</span>
+            <Link className='talk-btn-text' href={link}>
+                {title}
+            </Link>
         </div>
     )
 }
