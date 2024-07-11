@@ -1,7 +1,8 @@
 import "./globals.css";
-import Nav from '../layout/nav'
+import Nav from "../layout/nav";
 import Footer from "../components/footer";
 import { Toaster } from "react-hot-toast"; // https://react-hot-toast.com/
+import SmoothScroll from "../components/smoothScroll";
 
 export const metadata = {
   title: "Poprigo",
@@ -12,25 +13,37 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" />
-        {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" /> */}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/assets/fav/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/assets/fav/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/assets/fav/favicon-16x16.png"
+        />
       </head>
       <body>
-        <Toaster position="top-center" />
-        <main>
-          <Nav />
-          {children}
-          <Footer />
-        </main>
-
-        {/* <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
-          integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
-          integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-          <script src="/js/script.js"></script> */}
+        <SmoothScroll>
+          <Toaster position="top-center" />
+          <main>
+            <Nav />
+            {children}
+            <Footer />
+          </main>
+        </SmoothScroll>
       </body>
     </html>
   );

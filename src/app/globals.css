@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "recoleta";
-  src: url("../../public/assets/fonts/recoleta.ttf");
+  src: url("/assets/fonts/recoleta.ttf");
 }
 
 :root {
@@ -25,8 +25,8 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
   overflow-x: hidden;
 }
 
@@ -81,7 +81,7 @@ main {
   color: var(--sub-text-color);
 }
 
-.continueBtnWhite{
+.continueBtnWhite {
   margin-top: 2vw;
   padding: 1vw;
   padding-left: 2vw;
@@ -94,7 +94,7 @@ main {
   width: fit-content;
   cursor: pointer;
   border: 0.1vw solid var(--second-background-color);
-  color:var(--second-background-color);
+  color: var(--second-background-color);
 }
 
 .continueBtnWhite:hover {
@@ -133,11 +133,11 @@ main {
   flex: 1;
 }
 
-.nav-links>a {
+.nav-links > a {
   text-decoration: none;
   color: #232323;
   font-size: 1.3vw;
-  padding-right: 2vw
+  padding-right: 2vw;
 }
 
 .logo {
@@ -165,7 +165,6 @@ main {
 }
 
 /* Navigation Bar End */
-
 
 /* Hero Section Start */
 .hero {
@@ -224,7 +223,7 @@ main {
   margin-top: 1vw;
   height: 40vw;
   background-color: #ffffff;
-  background-image: url('https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2');
+  background-image: url("https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -232,9 +231,70 @@ main {
   border-radius: 2vw;
   /* cursor: none; */
 }
-
 /* Hero Section End */
 
+/* Client Section Start */
+.client {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--second-background-color);
+}
+
+.client-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.7vw;
+}
+
+.client-box {
+  width: calc(25% - 1.4vw);
+  padding: 2vw;
+  /* background-color: #f3ede6; */
+  background-color: #fffbf5;
+  box-sizing: border-box;
+  border-radius: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid #ffffff;
+}
+
+.client-description-text {
+  font-size: 0.9vw;
+  color: var(--sub-text-color);
+  letter-spacing: 0.02vw;
+  line-height: 1.2vw;
+}
+
+.client-image {
+  height: 8vw;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  aspect-ratio: 1 / 0.3;
+}
+
+.client-image-one {
+  background-image: url("/assets/images/client1.png");
+}
+
+.client-image-two {
+  background-image: url("/assets/images/client2.png");
+}
+
+.client-image-three {
+  background-image: url("/assets/images/client3.png");
+}
+
+.client-image-four {
+  background-image: url("/assets/images/client4.png");
+}
+/* Client Section Start */
 
 /* Brand Section Start */
 .brand {
@@ -261,34 +321,34 @@ main {
   border-radius: 1.5vw;
 }
 
-.brand-icon-cover{
-display: flex;
-align-items: center;
+.brand-icon-cover {
+  display: flex;
+  align-items: center;
 }
 
-.brand-icon{
+.brand-icon {
   height: 2.5vw;
   width: 2.5vw;
-  background-image: url('/assets/images/idea.gif');
+  background-image: url("/assets/images/idea.gif");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 1vw;
 }
 
-.brand-icon-one{
-  background-image: url('/assets/images/idea.gif');
+.brand-icon-one {
+  background-image: url("/assets/images/idea.gif");
 }
 
-.brand-icon-two{
-  background-image: url('/assets/images/paint-palette.gif');
+.brand-icon-two {
+  background-image: url("/assets/images/paint-palette.gif");
 }
 
-.brand-icon-three{
-  background-image: url('/assets/images/html.gif');
+.brand-icon-three {
+  background-image: url("/assets/images/html.gif");
 }
 
-.brand-icon-four{
-  background-image: url('/assets/images/rocket.gif');
+.brand-icon-four {
+  background-image: url("/assets/images/rocket.gif");
 }
 
 .sub-title {
@@ -317,6 +377,10 @@ align-items: center;
 
 .double-space-container {
   height: 1.5vw;
+}
+
+.three-x-space-container {
+  height: 4vw;
 }
 
 .section-end-space {
@@ -373,16 +437,16 @@ align-items: center;
   border-radius: 1.5vw;
 }
 
-.about-image-one{
-  background-image: url('/assets/images/a1.jpg');
+.about-image-one {
+  background-image: url("/assets/images/a1.jpg");
 }
 
-.about-image-two{
-  background-image: url('/assets/images/a2.jpg');
+.about-image-two {
+  background-image: url("/assets/images/a2.jpg");
 }
 
-.about-image-three{
-  background-image: url('/assets/images/a3.jpg');
+.about-image-three {
+  background-image: url("/assets/images/a3.jpg");
 }
 
 /* About Section End */
@@ -405,39 +469,43 @@ align-items: center;
 }
 
 .service-images {
-  width: 60%;
-  height: 30vw;
+  width: 55%;
+  height: 35vw;
+  border: 4px solid #ffffff;
+  border-radius: 2vw;
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-size: cover;
+  cursor: pointer;
 }
-.service-images-one{
+
+.service-images-one {
   background-image: url("/assets/images/uiux.png");
 }
 
-.service-images-two{
+.service-images-two {
   background-image: url("/assets/images/mobile.png");
 }
 
-.service-images-three{
+.service-images-three {
   background-image: url("/assets/images/website.png");
 }
 
-.service-images-four{
+.service-images-four {
   background-image: url("/assets/images/software.png");
 }
 
-.service-images-five{
+.service-images-five {
   background-image: url("/assets/images/shopify.png");
 }
 
-.service-images-six{
+.service-images-six {
   background-image: url("/assets/images/frontend.png");
 }
 
 .service-list {
-  width: 40%;
-  padding-left: 2vw;
+  width: 45%;
+  padding-left: 3vw;
 }
 
 /* Service Section End */
@@ -483,7 +551,13 @@ video {
   width: 100%;
   height: 100%;
   background: rgb(239, 182, 27);
-  background: linear-gradient(0deg, #000000 0%, #000000 6%, rgba(163, 192, 100, 0) 48%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    #000000 0%,
+    #000000 6%,
+    rgba(163, 192, 100, 0) 48%,
+    rgba(0, 212, 255, 0) 100%
+  );
 }
 
 .gif-content {
@@ -544,7 +618,7 @@ video {
 .blog-image {
   height: 13vw;
   width: 20vw;
-  background-image: url('https://lollypop.design/wp-content/uploads/2023/03/Metaverse-Banner-Image.webp');
+  background-image: url("https://lollypop.design/wp-content/uploads/2023/03/Metaverse-Banner-Image.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -619,7 +693,7 @@ video {
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: url('/assets/images/footer.svg');
+  background-image: url("/assets/images/footer.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto 20vw;
@@ -628,7 +702,7 @@ video {
 .footer-logo {
   width: 4vw;
   height: 4vw;
-  background-image: url('/assets/images/logo.png');
+  background-image: url("/assets/images/logo.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -675,7 +749,7 @@ video {
   position: relative;
 }
 
-.footer-box>h1 {
+.footer-box > h1 {
   font-weight: 500;
   color: #909396;
   font-size: 0.9vw;
@@ -694,13 +768,13 @@ li {
   margin-bottom: 1vw;
 }
 
-li>a {
+li > a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1vw;
 }
 
-li>a:hover {
+li > a:hover {
   color: var(--primery-color);
 }
 
@@ -757,7 +831,6 @@ li>a:hover {
 
 /* Footer Section End */
 
-
 /* About Us Page Start  */
 .about-page {
   width: 100%;
@@ -813,7 +886,7 @@ li>a:hover {
   flex: 0.8;
   height: 40vw;
   background-color: #ffffff;
-  background-image: url('https://osome.com/strapi-cdn/full@2x-intro_yin_3ef68cf74b.webp');
+  background-image: url("https://img.freepik.com/free-photo/colleagues-working-project-discussing-details_114579-2817.jpg?t=st=1718191916~exp=1718195516~hmac=d4aa752dc51020909c3aec54c2f0243de08c0efb261469ae756bf52a30add64c&w=2000");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -874,7 +947,7 @@ li>a:hover {
   position: relative;
 }
 
-.why-image{
+.why-image {
   align-self: center;
   height: 8vw;
   width: 8vw;
@@ -884,20 +957,20 @@ li>a:hover {
   margin-bottom: 1.6vw;
 }
 
-.why-image-one{
-  background-image: url('/assets/images/cal.svg');
+.why-image-one {
+  background-image: url("/assets/images/cal.svg");
 }
 
-.why-image-two{
-  background-image: url('/assets/images/team.svg');
+.why-image-two {
+  background-image: url("/assets/images/team.svg");
 }
 
-.why-image-three{
-  background-image: url('/assets/images/marketing.svg');
+.why-image-three {
+  background-image: url("/assets/images/marketing.svg");
 }
 
-.why-image-four{
-  background-image: url('/assets/images/adv.svg');
+.why-image-four {
+  background-image: url("/assets/images/adv.svg");
 }
 
 .why-title-text {
@@ -916,7 +989,6 @@ li>a:hover {
 }
 
 /* About Us Page End  */
-
 
 /* Contact Us Page Start  */
 .contact-page {
@@ -946,12 +1018,12 @@ li>a:hover {
 }
 
 .illustration-left {
-  background-image: url('/assets/images/contactus_one.svg');
+  background-image: url("/assets/images/contactus_one.svg");
   background-position: bottom left;
 }
 
 .illustration-right {
-  background-image: url('/assets/images/contactus_two.svg');
+  background-image: url("/assets/images/contactus_two.svg");
   background-position: bottom right;
 }
 
@@ -1029,7 +1101,7 @@ textarea:focus {
   gap: 1vw;
 }
 
-.row>div {
+.row > div {
   flex: 1;
 }
 
@@ -1136,9 +1208,9 @@ textarea:focus {
 }
 
 .blog-main-blog-container {
-  width: 65%;
-  height: 32vw;
-  background-image: url('https://osome.com/content/images/size/w1860/2023/07/what-is-fiscal-year.webp');
+  width: 50%;
+  height: 28vw;
+  background-image: url("https://cdn.dribbble.com/userupload/7641260/file/original-53d11492f3ca1c021dbe725b8b4ec998.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1157,14 +1229,16 @@ textarea:focus {
 }
 
 .blog-small-blog-list-container {
-  width: 35%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-left: 1.2vw;
-  gap: 1vw;
+  padding-left: 3vw;
+  /* justify-content: center;
+  align-items: center; */
+  /* align-items: flex-start; */
+  /* gap: 1vw; */
   overflow: hidden;
-  height: 30vw;
+  height: 28vw;
 }
 
 .small-blog-container {
@@ -1179,7 +1253,7 @@ textarea:focus {
 
 .small-blog-content {
   flex: 1;
-  padding-left: 1vw;
+  /* padding-left: 1vw; */
   padding-right: 1vw;
 }
 
@@ -1187,7 +1261,7 @@ textarea:focus {
   width: 6vw;
   height: 6vw;
   border-radius: 0.9vw;
-  background-image: url('https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2');
+  background-image: url("https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1233,7 +1307,7 @@ textarea:focus {
   height: 14vw;
   width: 100%;
   border-radius: 1.35vw;
-  background-image: url('https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2');
+  background-image: url("https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1248,3 +1322,157 @@ textarea:focus {
 }
 
 /* Blog Page End  */
+
+/* Service Page Start */
+
+.service-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.service-image-container {
+  border-radius: 2vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30vw;
+  width: 50%;
+}
+
+.mobile-image {
+  background-image: url("/assets/images/ser_5.png");
+}
+
+.uiux-image {
+  background-image: url("/assets/images/ser_3.png");
+}
+
+.website-image {
+  background-image: url("/assets/images/ser_4.png");
+}
+
+.shopify-image {
+  background-image: url("/assets/images/ser_2.png");
+}
+
+.software-image {
+  background-image: url("/assets/images/ser_1.png");
+}
+
+.service-text-container {
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vw;
+  width: 50%;
+}
+
+/* Service Page End */
+
+/* Blog Details Page Start */
+.blog-details-container {
+  width: 74%;
+  display: flex;
+  gap: 3vw;
+}
+
+.blog-details-section {
+  width: 70%;
+}
+
+.more-blog-section {
+  width: 30%;
+}
+
+.blog-details-image {
+  margin-top: 2vw;
+  height: 20vw;
+  width: 100%;
+  border-radius: 1.4vw;
+  background-image: url("https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+ul.a {
+  list-style-type: square;
+  margin-left: 2vw;
+}
+
+.shopify-box {
+  padding: 2vw;
+  border-radius: 1.4vw;
+  background-color: #f3ede6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopify-logo {
+  background-image: url("/assets/images/shopify.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 5vw;
+  width: 5vw;
+  margin-bottom: 1.5vw;
+}
+
+.subscribe-container {
+  width: 74%;
+  padding-left: 16vw;
+  padding-right: 16vw;
+  padding-bottom: 4vw;
+  /* padding-top: 4vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.4vw;
+  background-color: var(--background-color);
+}
+
+/* Blog Details Page End */
+
+/* Loader */
+
+.loader {
+  border: 0.5vw solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 0.5vw solid var(--text-color);
+  width: 1vw;
+  height: 1vw;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin-left: 1vw;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loader */
+
+/* FAQ Start */
+
+/* FAQ End */

@@ -5,12 +5,23 @@ export const brandTitle = <>From Beginning to Brand<br />We're here to assist yo
 export const brandSubText = (
     <>A comprehensive creative agency crafting and developing<br />innovative digital experiences across all platforms and brand touchpoints.</>
 )
+export const clientTitle = "Who Trust Us"
+export const clientSubText = (
+    <>We provide bespoke strategies to assist clients in achieving their<br/>unique business goals, partnering with innovative founders who are transforming key markets globally.</>
+)
 
 export const visoinTitle = <>Our Vision<br />Transforming Visions into Reality</>
 export const visionSubTitle = "Our vision at Poprigo is to be more than just a service provider; we aim to be your technology partner, propelling your business to new heights. From ideation to execution, we are committed to transforming your dreams into digital realities. Our team of seasoned professionals brings a blend of creativity, technical expertise, and unwavering dedication to every project."
 
 export const whyTitle = "Why Poprigo?"
 export const whySubTitle = "We're the dynamic storytellers of your brand"
+
+export const clientText = {
+    trueColors: "A leading global notebook manufacturer.",
+    cosmo: "A large-scale international chemical exporter.",
+    paperSlate: "A prominent global notebook manufacturer.",
+    theStyle: "A major global clothing supplier.",
+}
 
 export const brandText = {
     researchTitle: "Research",
@@ -23,7 +34,7 @@ export const brandText = {
     buildSubText: "We help you translate any kind of design into pixel perfect, adaptable and scalable digital products for businesses.",
 
     launchTitle: "Launch",
-    launchSubText: "We help you translate any kind of design into pixel perfect, adaptable and scalable digital products for businesses.",
+    launchSubText: "We flawlessly deploy your product, ensuring a smooth market entry and maximum impact.",
 }
 
 export const aboutTitle = <>We Think As<br />Strategists. <br />We Do As<br />Creators.</>
@@ -115,5 +126,5 @@ export const MarketingTitle = <>Marketing<br />Marvel Makers</>
 export const MarketingDescription = "We weave our marketing magic to showcase your masterpieces and captivate your audience's attention."
 
 export const AdvisorsTitle = <>Personal<br />Pro Advisors</>
-export const AdvisorsDescription = "We weave our marketing magic to showcase your masterpieces and captivate your audience's attention."
+export const AdvisorsDescription = "Empowering you with personalized, professional guidance, our advisors craft tailored strategies to elevate your success and achieve your unique goals."
 

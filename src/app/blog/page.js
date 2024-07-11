@@ -1,5 +1,5 @@
 import BlogBoxList from "@/src/components/blog/blogBoxList";
-import SmallBlog from "@/src/components/blog/smallBlog";
+import BorderButton from "@/src/components/borderButton";
 import TitleText from "@/src/components/titleText";
 import { blogSubTitle, blogTitle } from "@/src/config/constant";
 
@@ -7,19 +7,18 @@ export default function Blog({ }) {
     return (
         <div className="blog-page">
             <TitleText title={blogTitle} subTitle={blogSubTitle} />
+            <div className="space-container" />
+            <div className="space-container" />
+
             <div className="blog-page-container">
-                <div className="blog-main-blog-container">
-                    <div className="main-blog-details-container">
-                        <p className="blog-date-text">Posted on 16 March, 2023</p>
-                        <div className="space-container" />
-                        <h2 className="sub-title">Understanding Accessibility Needs in the Metaverse</h2>
-                    </div>
-                </div>
+                <div className="blog-main-blog-container" />
                 <div className="blog-small-blog-list-container">
-                    <SmallBlog />
-                    <SmallBlog />
-                    <SmallBlog />
-                    <SmallBlog />
+                    <Description text="🕐 Posted on 16 March, 2023"/>
+                    <div className="space-container" />
+                    <div className="space-container" />
+                    <Title text="Mobile Application" />
+                    <Description text="Illuminate your app vision with bespoke design, where innovation converges with user-centric brilliance. Illuminate your app vision with bespoke design, where innovation converges with user-centric brilliance." />
+                    <BorderButton title="Explore" style={{ alignSelf: 'start' }} />
                 </div>
             </div>
             <div className="section-end-space" />
@@ -27,7 +26,6 @@ export default function Blog({ }) {
             <div className="blog-box-main-container">
                 <div className="container">
                     <TitleText title="Special Blog's" subTitle={"RESOURCES"} isUP={true} />
-                    {/* <TitleText title={"Special Blog's"} /> */}
                     <BlogBoxList />
                 </div>
                 <div className="section-end-space" />
@@ -35,3 +33,15 @@ export default function Blog({ }) {
         </div>
     )
 }
+
+const Title = ({ text }) => (
+    <h1 style={{ fontSize: "2.8vw", lineHeight: "3.6vw" }} className="ap-title-text">
+        {text}
+    </h1>
+)
+
+const Description = ({ text }) => (
+    <p className="ap-sub-description-text">
+        {text}
+    </p>
+)

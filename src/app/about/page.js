@@ -1,5 +1,6 @@
 import WhyCard from "@/src/components/about/whyCard";
 import TitleText from "@/src/components/titleText";
+import WhyPoprigo from "@/src/components/whyPoprigo";
 import {
     visoinTitle, visionSubTitle, whyTitle, whySubTitle, VersatileTitle, VersatileDescription, MarketingTitle, MarketingDescription,
     AdvisorsTitle, AdvisorsDescription, budgeTitle, budgeDescription, aboutPageTitle, aboutPageDescription
@@ -18,17 +19,7 @@ export default function About({ }) {
                 </div>
                 <div className="ap-hero-image" />
             </div>
-            <div className="ap-why">
-                <div className="container">
-                    <TitleText title={whyTitle} subTitle={whySubTitle} />
-                    <div className="why-box-container">
-                        <WhyCard no="1" title={budgeTitle} description={budgeDescription} />
-                        <WhyCard no="2" title={VersatileTitle} description={VersatileDescription} />
-                        <WhyCard no="3" title={MarketingTitle} description={MarketingDescription} />
-                        <WhyCard no="4" title={AdvisorsTitle} description={AdvisorsDescription} />
-                    </div>
-                </div>
-            </div>
+            <WhyPoprigo />
             <div className="ap-vision">
                 <div className="container ap-vision-container">
                     <Image

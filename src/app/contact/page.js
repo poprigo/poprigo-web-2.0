@@ -6,9 +6,10 @@ import Input from '@/src/components/input';
 import { toast } from 'react-hot-toast';
 import MapComponent from '@/src/components/contact/map';
 import AddressComponent from '@/src/components/contact/address';
+import BorderButton from '@/src/components/borderButton';
 
 const ContactUs = ({ }) => {
-
+    const [isLoading, setIsLoading] = useState(false)
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -27,14 +28,30 @@ const ContactUs = ({ }) => {
             toast.error("All fields are required.")
             return;
         } else {
-            {/* 
-                Your message has been successfully received, and we will be in touch with you shortly.
-                Your message was not sent. Please try again later!
-            */}
-        }
+            setIsLoading(true)
+            var fd = new FormData();
+            fd.append("name", `Name: ${formData.name}`)
+            fd.append("email", `Email: ${formData.email}`)
+            fd.append("mobile", `Mobile: ${formData.mobile}`)
+            fd.append("message", `Message: ${formData.message}`)
 
-        console.log(formData);
-        setFormData({ name: '', email: '', mobile: '', message: '' });
+            fetch("https://script.google.com/macros/s/AKfycbyimyK3UMeJV4RtHOGgEXJUkUu1jkKYACy68TqxoGzGq78XTTKdjkJCBGbNd7W-RKbg6Q/exec", {
+                method: "POST",
+                body: fd
+            }).then(response => {
+                if (response.ok) {
+                    toast.success("Your message has been successfully received, and we will be in touch with you shortly")
+                } else {
+                    toast.error("Your message was not sent. Please try again later!")
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+                toast.error("Your message was not sent. Please try again later!")
+            }).finally(() => {
+                setIsLoading(false)
+                setFormData({ name: '', email: '', mobile: '', message: '' });
+            });
+        }
     };
 
     return (
@@ -61,9 +78,12 @@ const ContactUs = ({ }) => {
                             value={formData.message} onChange={handleChange} />
 
                         {/* Submit Button */}
-                        <div className="submit-btn" onClick={handleSubmit}>
-                            <span class="submit-btn-text">Send Your Message</span>
-                        </div>
+                        <BorderButton
+                            onClick={handleSubmit}
+                            title="Send Your Message"
+                            showLoader={isLoading}
+                            showIcon={false}
+                            style={{ backgroundColor: "#212833", marginTop: "1vw", color: '#fffdfa' }} />
                     </div>
 
                     {/* Right illustration */}

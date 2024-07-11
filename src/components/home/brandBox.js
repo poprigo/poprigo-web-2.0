@@ -1,4 +1,8 @@
+'use client';
+import { useRouter } from 'next/navigation';
+
 export default function BrandBox({ title = "", subTitle = "", no }) {
+    const { push } = useRouter();
     return (
         <div className="brand-box">
             <div className="brand-icon-cover">
@@ -16,7 +20,7 @@ export default function BrandBox({ title = "", subTitle = "", no }) {
 
             <div className="space-container" />
 
-            {subTitle && <p className="sub-title learn-more-text">Learn More</p>}
+            {subTitle && <p onClick={()=> push('/service')} className="sub-title learn-more-text">Learn More</p>}
         </div>
     );
 }
