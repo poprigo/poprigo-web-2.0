@@ -1,0 +1,136 @@
+/* Blog Page Start  */
+.blog-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--second-background-color);
+}
+
+.blog-page-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.blog-main-blog-container {
+  width: 50%;
+  height: 28vw;
+  background-image: url("https://cdn.dribbble.com/userupload/7641260/file/original-53d11492f3ca1c021dbe725b8b4ec998.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+
+.main-blog-details-container {
+  padding: 1vw;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  width: 100%;
+  height: 10vw;
+  bottom: 0;
+}
+
+.blog-small-blog-list-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3vw;
+  /* justify-content: center;
+  align-items: center; */
+  /* align-items: flex-start; */
+  /* gap: 1vw; */
+  overflow: hidden;
+  height: 28vw;
+}
+
+.small-blog-container {
+  width: 100%;
+  background-color: var(--second-background-color);
+  border-radius: 1vw;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  padding: 0.2vw;
+}
+
+.small-blog-content {
+  flex: 1;
+  /* padding-left: 1vw; */
+  padding-right: 1vw;
+}
+
+.small-blog-image {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 0.9vw;
+  background-image: url("https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.small-blog-title {
+  font-weight: 600;
+  font-size: 1.1vw;
+  color: var(--sub-text-color);
+  letter-spacing: 0.05vw;
+}
+
+.blog-box-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--background-color);
+}
+
+.blog-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.2vw;
+}
+
+.blog-box {
+  display: flex;
+  flex-direction: column;
+  height: 38vw;
+  width: calc(32% - 0.3vw);
+  background-color: var(--second-background-color);
+  box-sizing: border-box;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  position: relative;
+  padding: 2vw;
+}
+
+.blog-box-image {
+  height: 14vw;
+  width: 100%;
+  border-radius: 1.35vw;
+  background-image: url("https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.category-text {
+  font-size: 1vw;
+  color: #939598;
+  letter-spacing: 0.04vw;
+  line-height: 1.4vw;
+  margin-bottom: 1vw;
+}
+
+@media (min-width :"425px"){
+  
+}
+
+/* Blog Page End  */

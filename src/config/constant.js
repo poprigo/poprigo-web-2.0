@@ -104,7 +104,7 @@ export const promiseBoxThreeSubText = "Luna's global bookstore delivers handpick
 
 export const blogTitle = "Dive into Our Insights"
 export const blogSubTitle = (
-    <>Discover diverse perspectives, stay updated on trends, and delve<br />into insightful articles across our blog.</>
+    <>Discover diverse perspectives, stay updated on trends, and delve<br className="br-tag"/>into insightful articles across our blog.</>
 )
 
 export const contactTitle = <>Got something in mind?<br />We'd love to help.</>

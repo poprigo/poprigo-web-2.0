@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../components/button";
 
-export default function Nav({}) {
+export default function Nav(){
   return (
     <div className="container">
       <div className="nav">
@@ -17,6 +17,9 @@ export default function Nav({}) {
           <NavLink href="/blog" text="Blog" />
           <NavLink href="/contact" text="Contact" />
           <Button link="/contact" title={"LETS TALK"} />
+        </div>
+        <div className="mobile-nav-links">
+link
         </div>
       </div>
     </div>
