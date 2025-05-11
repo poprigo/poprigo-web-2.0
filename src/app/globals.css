@@ -1196,11 +1196,11 @@ input,
 textarea {
   border: 0.08vw solid #00000066;
   width: 100%;
-  padding: 1.2vw;
-  margin-bottom: 1.3vw;
+  padding: 1.4vw 2.3vw;
+  margin-bottom: 2.2vw;
   border-radius: 0.8vw;
   box-sizing: border-box;
-  font-size: 1vw;
+  font-size: 3vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
@@ -1351,6 +1351,15 @@ textarea:focus {
   background-color: #efb61b;
   color: black;
   border-color: #efb61b;
+}
+
+@media (min-width: 640px) {
+  input,
+  textarea {
+    padding: 1.2vw;
+    margin-bottom: 1.3vw;
+    font-size: 1vw;
+  }
 }
 
 /* Contact Us Page End  */
