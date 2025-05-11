@@ -158,7 +158,7 @@ main {
   }
 }
 
-@media (min-width : 640px){
+@media (min-width: 640px) {
   .continueBtnText {
     font-size: 1.4vw;
   }
@@ -189,7 +189,7 @@ main {
   display: none;
 }
 
-.nav-links>a {
+.nav-links > a {
   text-decoration: none;
   color: #232323;
   font-size: 1.3vw;
@@ -234,7 +234,7 @@ main {
     flex: 1;
   }
 
-  .nav-links>a {
+  .nav-links > a {
     text-decoration: none;
     color: #232323;
     font-size: 1.3vw;
@@ -331,7 +331,7 @@ main {
   }
 }
 
-@media (min-width:640px){
+@media (min-width: 640px) {
   .title-text {
     letter-spacing: 0.1vw;
     font-size: 3vw;
@@ -342,7 +342,7 @@ main {
     line-height: 1.7vw;
   }
 
-   .text-container {
+  .text-container {
     margin-top: 4vw;
     margin-bottom: 4vw;
   }
@@ -509,7 +509,6 @@ main {
   .brand-box {
     width: calc(100% - 1.4vw);
   }
-
 }
 
 @media (min-width: 425px) {
@@ -518,20 +517,20 @@ main {
     line-height: 4vw;
   }
   .description-text {
-  font-size: 2.2vw;
-  line-height: 2.9vw;
-}
+    font-size: 2.2vw;
+    line-height: 2.9vw;
+  }
 }
 
-@media (min-width:640px){
+@media (min-width: 640px) {
   .sub-title {
     font-size: 2vw;
     line-height: 2.2vw;
   }
   .description-text {
-  font-size: 1.1vw;
-  line-height: 1.4vw;
-}
+    font-size: 1.1vw;
+    line-height: 1.4vw;
+  }
 }
 
 /* Brand Section End */
@@ -692,11 +691,13 @@ video {
   width: 100%;
   height: 100%;
   background: rgb(239, 182, 27);
-  background: linear-gradient(0deg,
-      #000000 0%,
-      #000000 6%,
-      rgba(163, 192, 100, 0) 48%,
-      rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    #000000 0%,
+    #000000 6%,
+    rgba(163, 192, 100, 0) 48%,
+    rgba(0, 212, 255, 0) 100%
+  );
 }
 
 .gif-content {
@@ -782,10 +783,10 @@ video {
 }
 
 .blog-date-text {
-  font-size: 0.9vw;
+  font-size: 2.6vw;
   color: var(--sub-text-color);
   letter-spacing: 0.04vw;
-  line-height: 1vw;
+  line-height: 3vw;
 }
 
 .read-all-blog {
@@ -815,6 +816,12 @@ video {
   width: 100%;
 }
 
+@media (min-width: 425px) {
+  .blog-date-text {
+    font-size: 0.9vw;
+    line-height: 1vw;
+  }
+}
 /* Blog Section End */
 
 /* Footer Section End */
@@ -888,7 +895,7 @@ video {
   position: relative;
 }
 
-.footer-box>h1 {
+.footer-box > h1 {
   font-weight: 500;
   color: #909396;
   font-size: 0.9vw;
@@ -907,13 +914,13 @@ li {
   margin-bottom: 1vw;
 }
 
-li>a {
+li > a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1vw;
 }
 
-li>a:hover {
+li > a:hover {
   color: var(--primery-color);
 }
 
@@ -1128,7 +1135,7 @@ li>a:hover {
   line-height: 1.4vw;
 }
 
-@media (min-width : 425px) {
+@media (min-width: 425px) {
   .ap-sub-description-text {
     font-size: 2.2vw;
     line-height: 2.9vw;
@@ -1137,7 +1144,7 @@ li>a:hover {
   }
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
   .ap-sub-description-text {
     font-size: 1.1vw;
     line-height: 1.7vw;
@@ -1259,7 +1266,7 @@ textarea:focus {
   gap: 1vw;
 }
 
-.row>div {
+.row > div {
   flex: 1;
 }
 
@@ -1418,8 +1425,8 @@ textarea:focus {
 }
 
 .small-blog-image {
-  width: 6vw;
-  height: 6vw;
+  width: 36vw;
+  height: 23vw;
   border-radius: 0.9vw;
   background-image: url("https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2");
   background-repeat: no-repeat;
@@ -1429,9 +1436,10 @@ textarea:focus {
 
 .small-blog-title {
   font-weight: 600;
-  font-size: 1.1vw;
+  font-size: 3.5vw;
   color: var(--sub-text-color);
   letter-spacing: 0.05vw;
+  margin-bottom: 1.5vw;
 }
 
 .blog-box-main-container {
@@ -1480,7 +1488,7 @@ textarea:focus {
   margin-bottom: 1vw;
 }
 
-@media (min-width:425px) {
+@media (min-width: 425px) {
   .blog-page {
     padding: 0vw;
   }
@@ -1504,7 +1512,7 @@ textarea:focus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 2vw;
   }
@@ -1523,13 +1531,18 @@ textarea:focus {
   }
 
   .blog-box-image {
-  height: 30vw;
-  width: 100%;
-  margin-top: 2vw;
-}
+    height: 30vw;
+    width: 100%;
+    margin-top: 2vw;
+  }
+
+  .small-blog-title {
+    font-size: 1.1vw;
+    line-height: 2vw;
+  }
 }
 
-@media (min-width:640px){
+@media (min-width: 640px) {
   .blog-page-container {
     width: 90%;
     flex-direction: row;
@@ -1574,10 +1587,15 @@ textarea:focus {
   }
 
   .blog-box-image {
-  height: 14vw;
-  width: 100%;
-  margin-top: 0vw;
-}
+    height: 14vw;
+    width: 100%;
+    margin-top: 0vw;
+  }
+
+  .small-blog-image {
+    width: 6vw;
+    height: 6vw;
+  }
 }
 
 /* Blog Page End  */
@@ -1632,23 +1650,30 @@ textarea:focus {
 /* Service Page End */
 
 /* Blog Details Page Start */
-.blog-details-container {
+/* .blog-details-container {
   width: 74%;
   display: flex;
   gap: 3vw;
-}
+} */
 
-.blog-details-section {
+/* .blog-details-section {
   width: 70%;
-}
+} */
 
 .more-blog-section {
-  width: 30%;
+  margin-top: 4.5vw;
 }
 
+.blog-details-title {
+  font-family: var(--title-font);
+  color: var(--text-color);
+  letter-spacing: 0.1vw;
+  font-size: 5vw;
+  line-height: 6.8vw;
+}
 .blog-details-image {
-  margin-top: 2vw;
-  height: 20vw;
+  margin-top: 3.5vw;
+  height: 50vw;
   width: 100%;
   border-radius: 1.4vw;
   background-image: url("https://img.freepik.com/free-photo/diverse-people-working-office_53876-104681.jpg?w=2000&t=st=1709452321~exp=1709452921~hmac=39eaf46c91e2137ae8c2ea109baa17c7ab391275dfa329631444420b0e1464e2");
@@ -1660,10 +1685,12 @@ textarea:focus {
 ul.a {
   list-style-type: square;
   margin-left: 2vw;
+  font-size: 3vw;
+  line-height: 3.5vw;
 }
 
 .shopify-box {
-  padding: 2vw;
+  padding: 4vw;
   border-radius: 1.4vw;
   background-color: #f3ede6;
   display: flex;
@@ -1677,17 +1704,22 @@ ul.a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 5vw;
-  width: 5vw;
+  height: 18vw;
+  width: 16vw;
   margin-bottom: 1.5vw;
 }
 
+.shopify-box-title {
+  font-size: 4vw;
+  line-height: 4.6vw;
+}
+
 .subscribe-container {
-  width: 74%;
-  padding-left: 16vw;
-  padding-right: 16vw;
-  padding-bottom: 4vw;
-  /* padding-top: 4vw; */
+  width: 95%;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-bottom: 7vw;
+  padding-top: 7vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1696,6 +1728,61 @@ ul.a {
   background-color: var(--background-color);
 }
 
+@media (min-width: 425px) {
+  .blog-details-title {
+    font-size: 2vw;
+    line-height: 2.6vw;
+  }
+}
+
+@media (min-width: 625px) {
+  .blog-details-container {
+    width: 74%;
+    display: flex;
+    gap: 3vw;
+  }
+  .blog-details-section {
+    width: 70%;
+  }
+
+  .blog-details-image {
+    margin-top: 2vw;
+    height: 20vw;
+  }
+
+  ul.a {
+    list-style-type: square;
+    margin-left: 2vw;
+  }
+
+  .more-blog-section {
+    margin-top: 0vw;
+    width: 30%;
+  }
+
+  .shopify-box {
+    padding: 2vw;
+  }
+
+  .shopify-logo {
+    height: 5vw;
+    width: 5vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .shopify-box-title {
+    font-size: 2vw;
+    line-height: 2.6vw;
+  }
+
+  .subscribe-container {
+    width: 74%;
+    padding-left: 16vw;
+    padding-right: 16vw;
+    padding-bottom: 4vw;
+    padding-top: 0vw;
+  }
+}
 /* Blog Details Page End */
 
 /* Loader */

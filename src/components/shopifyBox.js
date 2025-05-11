@@ -16,7 +16,7 @@ export default function ShopifyBox({ }) {
 }
 
 const Title = ({ text }) => (
-    <h1 style={{ fontSize: "2vw", lineHeight: "2.6vw" }} className="ap-title-text">
+    <h1 className="shopify-box-title">
         {text}
     </h1>
 )

@@ -101,7 +101,7 @@ export default function Blog({ }) {
 }
 
 const Title = ({ text }) => (
-    <h1 style={{ fontSize: "2vw", lineHeight: "2.6vw" }} className="ap-title-text">
+    <h1  className="blog-details-title">
         {text}
     </h1>
 )
