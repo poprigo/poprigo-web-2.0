@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 export default function BlogBoxList({ }) {
     return (
         <div className="blog-box-container">
-            <div className="blog-box">
+            <Link href='/blogDetails' className="blog-box">
                 <p className="category-text">
                     BUSINESS TALK
                 </p>
@@ -19,9 +21,9 @@ export default function BlogBoxList({ }) {
                 <div className="blog-box-image">
 
                 </div>
-            </div>
+            </Link>
 
-            <div className="blog-box">
+            <Link href='/blogDetails' className="blog-box">
                 <p className="category-text">
                     BUSINESS TALK
                 </p>
@@ -39,9 +41,9 @@ export default function BlogBoxList({ }) {
                 <div className="blog-box-image">
 
                 </div>
-            </div>
+            </Link>
 
-            <div className="blog-box">
+            <Link href='/blogDetails' className="blog-box">
                 <p className="category-text">
                     BUSINESS TALK
                 </p>
@@ -59,7 +61,7 @@ export default function BlogBoxList({ }) {
                 <div className="blog-box-image">
 
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }

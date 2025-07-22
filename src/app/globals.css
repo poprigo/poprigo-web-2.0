@@ -1301,6 +1301,7 @@ textarea:focus {
   overflow: hidden;
   position: relative;
   padding: 2vw;
+  text-decoration: none;
 }
 
 .blog-box-image {
