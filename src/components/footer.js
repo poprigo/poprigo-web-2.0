@@ -8,7 +8,7 @@ export default function Footer({ title }) {
                     <div>
                         {/* <div className="footer-logo" /> */}
                         <h1 className="footer-title-text"> Let’s work together</h1>
-                        <p className="footer-description-text">Have an idea that could be the Next Big Thing? Or<br />you’re not sure where to start?</p>
+                        <p className="footer-description-text">Have an idea that could be the Next Big Thing? Or <br />you’re not sure where to start?</p>
                         <BorderButton title="Let’s Do it" type="white" />
                         {/* <p className="footer-description-text do-it">Let’s Do it</p> */}
                     </div>

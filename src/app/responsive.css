@@ -1,0 +1,584 @@
+/* Start Responsive */
+@media (max-width: 1280px) {
+  .nav-links > a {
+    font-size:16px;
+  }
+  .talk-btn {
+    height: 100%;
+    width: auto;
+    padding: 10px 16px;
+  }
+  .talk-btn-text{
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  /* Start: Hero section */
+  .sub-title-text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .sub-description-text{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  /* End: Hero section */
+
+  /* Start: About Section */
+  .continueBtn{
+    margin-top:20px;
+    max-width: 170px;
+    padding: 13px 24px;
+    width: 100%;
+    justify-content: center;
+    gap: 6px;
+  }  
+  .continueBtnText{
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .fa-arrow-right:before{
+    font-size: 14px;
+  }
+  .description-text{
+    font-size:14px;
+    line-height: 18px;
+  }
+  .about-container .description-text{
+    text-align: left;
+  }
+  .about-container br{
+    display:none;
+  }
+  .about-container{
+    justify-content: center;
+    width:100%;
+  }
+  /* End: About Section */
+
+  /* Start: Insight Section */
+  .ap-flex-gap {
+    padding: 12px;
+  }
+  /* End: Insight Section */
+
+  /* Start: Footer */
+  .footer-box > h1{
+    font-size:14px;
+    line-height: 16px;
+  }
+  .footer li > a{
+    font-size:13px;
+    line-height:16px;
+  }
+  .footer-description-text{
+    font-size:14px;
+    line-height: 18px;
+  }
+  .copyrightYear{
+    font-size:14px;
+    line-height:16px;
+  }
+  .continueBtnText {
+    font-size: 14px;
+  }
+  .footer .fa-arrow-right:before {
+    font-size: 13px;
+  }
+  .behance, .linkedin, .facebook, .instagram, .dribbble {
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+  }
+  /* End: Footer */
+}
+@media (max-width: 1024px) {
+  .section-end-space {
+    padding: 20px;
+  }
+  /* Start: Hero section */
+  .hero {
+    height: 100%;
+    padding-bottom: 40px;
+  }
+  .hero-image{
+    margin-top:0px;
+    height: 400px;
+    border-radius: 16px;
+  }
+  .bg-color-section {
+    height: 220px;
+  }
+  .text-container {
+    margin: 40px 0px;
+  }
+  .title-text {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  /* End: Hero section */
+
+  /* Start: Client section */
+  .client-box-container {
+    justify-content: center;
+    gap: 16px;
+  }
+  .client-box {
+    width: calc(50% - 16px);
+    padding: 24px;
+    border-radius: 16px;
+  }
+  .client-description-text {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+  .client-image {
+    height: 100px;
+    aspect-ratio: 1 / 0.3;
+  }
+  .description-text{
+    text-align: center;
+  }
+  /* End: Client section */
+
+  /* Start: Brand section */
+  .brand-icon {
+    height: 32px;
+    width: 32px;
+  }
+  .brand-box .sub-title.learn-more-text{
+    font-size:13px;
+    line-height:20px;
+  }
+  .brand-box{
+    width: calc(50% - 12px);
+  }
+  .brand-box .sub-title{
+    font-size:16px;
+    line-height: 24px;
+  }
+  .brand-box .description-text{
+    text-align: left;
+  }
+  .brand-box-container{
+    gap:24px;
+  }
+  /* End: Brand section */
+  
+  /* Start: Service Section */
+  .service-list .description-text{
+    text-align: left;
+  }
+  /* End: Service Section */
+
+  /* Start: Promise Section */
+  .promise-box{
+    border-radius:16px;
+    height: 350px;
+  }
+  .promise-box .gif-content .gif-title{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .promise-box .gif-content .gif-description{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  /* End: Promise Section */
+
+  /* Start: Insight Section */
+  .blog-container .description-text{
+    text-align: left;
+  }
+  .blog-box {
+    height:100%;
+    padding:16px;
+  }
+  /* End: Insight Section */
+
+  /* Start: Footer */
+  .continueBtnWhite {
+    margin-top: 20px;
+    padding: 10px 16px;
+  }
+  .footer-title-cover{
+    background-size: auto 200px;
+  }
+  .footer-title-text{
+    font-size:40px;
+  }
+  .footer li {
+    margin-bottom: 11px;
+  }
+  /* End: Footer */
+}
+@media (max-width: 989px) {
+  .nav img {
+    width: 45px;
+    height: auto;
+}
+  /* Start: About Section */
+  .about-container{
+    flex-direction: column;
+    padding:0 20px;
+    margin:40px 0px;
+  }
+  .about-text-container{
+    width:88%;
+    margin-bottom:40px;
+  }
+  .about-title,
+  .about-container .description-text {
+    text-align: center;
+  }
+  .continueBtn {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding:11px 20px;
+    max-width: 150px;
+  }
+  .about-images{
+    padding:0px;
+  }
+  .about-image {
+    padding:0px;
+    height: 230px;
+    width: 170px;
+    border-radius: 16px;
+  }
+  .continueBtnText{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  /* End: About Section */
+
+  /* Start: Service Section */
+   .service-list .sub-title{
+    font-size:16px;
+    line-height: 20px;
+  }
+  /* End: Service Section */
+
+  /* End: Blog Section */
+  .blog-container .description-text{
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .blog-box{
+    border-radius: 16px;
+  }
+  .blog-box-image{
+    border-radius: 16px;
+  }
+  .blog-box .category-text{
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .blog-box .sub-title{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .blog-box-image {
+    height: 150px;
+  }
+  /* End: Blog Section */
+
+  /* Start: Footer */
+  .footer-title-text {
+    font-size: 32px;
+  }
+  .footer-description-text {
+    font-size: 13px;
+  }
+  /* End: Footer */
+}
+@media (max-width: 768px) {
+  /* Start: Promise Section */
+  .promise-box{
+    width: calc(50% - 6px);
+  }
+  .promise-box-container{
+    justify-content: center;
+    gap:12px;
+  }
+  .gif-content{
+    padding:16px;
+  }
+  /* End: Promise Section */
+
+  /* Start: Blog Section */
+  .blog-box{
+     width: calc(50% - 6px);
+  }
+  .blog-box-container{
+    gap:12px;
+    justify-content: center;
+  }
+  /* End: Blog Section */
+
+  /* Start: Footer */
+  .footer-box {
+    width: calc(50% - 12px);
+  }
+  .footer-box-container{
+    column-gap:24px;
+    row-gap:16px;
+  }
+  .continueBtnText {
+    font-size: 14px;
+  }
+  .footer .fa-arrow-right:before {
+    font-size: 12px;
+  } 
+  .footer-title-cover {
+    background-size: auto 165px;
+  }
+  .footer li {
+    margin-bottom: 8px;
+  }
+  .footer-title-text {
+    font-size: 28px;
+  }
+  .footer-box > h1 {
+   font-size: 13px;
+    margin-bottom: 10px;
+ }
+  .copyrightYear {
+    font-size: 13px;
+  }
+  /* End: Footer */
+}
+@media (max-width: 750px) {
+  /* Start: Mobile header menu */
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .nav-links{
+    display: none;
+  }
+  .nav{
+    margin:10px 0px;
+  }
+  .mobile-slide-menu .talk-btn{
+    height: auto;
+    width: max-content;
+    padding: 12px 20px;
+  }
+  .mobile-menu-icon .fa-bars:before, .mobile-menu-icon .fa-navicon:before, .mobile-menu-icon .fa-times:before{
+    font-size: 20px;
+  }
+  /* End: Mobile header menu */
+}
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .section-end-space {
+    padding: 15px;
+  }
+  /* Start: Mobile header menu */
+   .nav img {
+    width: 40px;
+   }
+  /* End: Mobile header menu */
+
+  /* Start: Hero section */
+  .bg-color-section {
+    height: 180px;
+  }
+  .text-container {
+    margin: 30px 0 24px;
+  }
+  .title-text {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .sub-description-text br {
+    display: none;
+  }
+  .sub-title-text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .hero-image {
+    height: 300px;
+    border-radius: 12px;
+  }
+   /* End: Hero section */
+
+  /* Start: Client section */
+  .client-box {
+    width: calc(50% - 6px);
+    padding: 16px;
+    border-radius:12px;
+    border:none;
+  }
+  .client-description-text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .client-box-container {
+    gap:12px;
+  }
+  .client-image {
+    height: 80px;
+  }
+  /* End: Client section */
+
+  /* Start: Brand section */
+  .brand-box{
+    border-radius:12px;
+    padding:16px;
+    width: calc(50% - 6px);
+  }
+  .brand-box-container{
+    gap:12px;
+  }
+  .brand-icon {
+    height: 28px;
+    width: 28px;
+  }
+  /* End: Brand section */
+
+  /* Start: About section */
+  .about-text-container{
+    width:100%;
+    margin-bottom: 24px;
+  }
+  .about-container{
+    margin:30p 0px;
+  }
+  .about-images{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .continueBtn{
+    margin-top:14px;
+  }
+  .about-image{
+    border-radius:12px;
+  }
+  /* End: About section */
+
+  /* Start: Service Section */
+  .service-container{
+    flex-direction: column;
+  }
+  .service-images {
+    width: 100%;
+    height:400px;
+  }
+  .service-list{
+    width:100%;
+    padding:0px;
+    padding-top:16px;
+  }
+  /* End: Service Section */
+
+  /* Start: Footer */
+  .footer-title-cover{
+    background-image: none;
+    margin-top: 24px;
+  }
+  .divider{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .copyrightYear{
+    margin-bottom: 20px;
+  }
+  /* End: Footer */
+}
+@media (max-width: 575px) {
+  /* Start: Mobile header menu */
+  .mobile-slide-menu{
+    width:70%;
+  }
+  /* End: Mobile header menu */
+
+  /* Start: Service Section */
+  .blog-box {
+    width: 100%;
+  }
+  /* End: Service Section */
+}
+@media (max-width: 430px) {
+  /* Start: Mobile header menu */
+  .mobile-slide-menu{
+    width:100%;
+  }
+  /* End: Mobile header menu */
+
+  /* Start: Client section */
+  .client-box {
+    width: 100%;
+  }
+  /* End: Client section */
+
+  /* Start: Brand section */
+  .brand-box{
+     width:100%;
+  }
+  /* Start: Brand section */
+
+  /* Start: About section */
+  .about-image{
+    width: 100%;
+    background-position: center;
+  }
+  .about-images{
+    width:100%;
+  }
+  /* End: About section */
+
+  /* Start: Service section */
+    .service-images {
+    height: 290px;
+    }
+  /* End: Service section */
+
+  /* Start: Promise Section */
+  .promise-box{
+    width: 100%;
+    border-radius: 12px;
+  }
+  .gif-content{
+    padding:20px;
+  }
+  .promise-box .gif-content .gif-title{
+    margin-bottom: 6px;
+  }
+  /* End: Promise Section */
+
+  /* Start: Blog Section */
+  .blog-box-image,
+  .blog-box{
+    border-radius:12px;
+  }
+  .ap-flex-gap {
+    padding: 10px;
+  }
+  /* End: Blog Section */
+}
+@media (max-width: 400px) {
+  .title-text br{
+    display:none;
+  }
+  /* Start: Footer */
+  .footer-box {
+    width: 100%;
+  }
+  .footer-description-text br{
+    display: none;
+  }
+  /* End: Footer */
+}

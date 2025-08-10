@@ -1,7 +1,7 @@
 export const heroTitle = <>Transforming Dreams<br />into Digital Reality with</>
 export const heroSubTitle = "Empowering Your Vision for Success!"
 
-export const brandTitle = <>From Beginning to Brand<br />We're here to assist you at every step!</>
+export const brandTitle = <>From Beginning to Brand <br />We're here to assist you at every step!</>
 export const brandSubText = (
     <>A comprehensive creative agency crafting and developing<br />innovative digital experiences across all platforms and brand touchpoints.</>
 )
