@@ -17,7 +17,7 @@ export default function About({ }) {
                     <div className="ap-flex-gap" />
                     <p className="ap-sub-description-text">{aboutPageDescription}</p>
                 </div>
-                <div className="ap-hero-image" />
+                <div className="ap-hero-image"></div>
             </div>
             <WhyPoprigo />
             <div className="ap-vision">

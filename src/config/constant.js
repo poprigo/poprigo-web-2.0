@@ -17,10 +17,14 @@ export const whyTitle = "Why Poprigo?"
 export const whySubTitle = "We're the dynamic storytellers of your brand"
 
 export const clientText = {
-    trueColors: "A leading global notebook manufacturer.",
-    cosmo: "A large-scale international chemical exporter.",
-    paperSlate: "A prominent global notebook manufacturer.",
-    theStyle: "A major global clothing supplier.",
+  trueColors: "A leading global notebook manufacturer.",
+  cosmo: "A large-scale international chemical exporter.",
+  paperSlate: "A prominent global notebook manufacturer.",
+  theStyle: "A major global clothing supplier.",
+  fmj: "A trusted US-based jewelry discovery platform.",
+  glowmore: "A top-selling Indian beauty brand.",
+  poptoy: "A leading supplier of premium Indian toys.",
+  barbella: "A premium Indian perfume brand.",
 }
 
 export const brandText = {

@@ -41,10 +41,14 @@ export default function Home() {
           <TitleText title={clientTitle} subTitle={clientSubText} />
 
           <div className="client-box-container">
-            <ClientBox no="1" subTitle={clientText.trueColors} />
+            <ClientBox no="6" subTitle={clientText.fmj} />
+            <ClientBox no="5" subTitle={clientText.barbella} />
             <ClientBox no="2" subTitle={clientText.cosmo} />
             <ClientBox no="3" subTitle={clientText.paperSlate} />
             <ClientBox no="4" subTitle={clientText.theStyle} />
+            <ClientBox no="1" subTitle={clientText.trueColors} />
+            <ClientBox no="7" subTitle={clientText.glowmore} />
+            <ClientBox no="8" subTitle={clientText.poptoy} />
           </div>
 
           <div className="section-end-space" />
@@ -63,7 +67,7 @@ export default function Home() {
             <BrandBox no="3" title={brandText.buildTitle} subTitle={brandText.buildSubText} />
             <BrandBox no="4" title={brandText.launchTitle} subTitle={brandText.launchSubText} />
           </div>
-
+          
           <div className="section-end-space" />
         </div>
       </div>

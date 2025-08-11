@@ -294,6 +294,22 @@ main {
 .client-image-four {
   background-image: url("/assets/images/client4.png");
 }
+
+.client-image-five {
+  background-image: url("/assets/images/client5.png");
+}
+
+.client-image-six {
+  background-image: url("/assets/images/client6.png");
+}
+
+.client-image-seven {
+  background-image: url("/assets/images/client7.png");
+}
+
+.client-image-eight {
+  background-image: url("/assets/images/client8.png");
+}
 /* Client Section Start */
 
 /* Brand Section Start */
