@@ -10,7 +10,7 @@ export const clientSubText = (
     <>We provide bespoke strategies to assist clients in achieving their<br/>unique business goals, partnering with innovative founders who are transforming key markets globally.</>
 )
 
-export const visoinTitle = <>Our Vision<br />Transforming Visions into Reality</>
+export const visoinTitle = <>Our Vision <br />Transforming Visions into Reality</>
 export const visionSubTitle = "Our vision at Poprigo is to be more than just a service provider; we aim to be your technology partner, propelling your business to new heights. From ideation to execution, we are committed to transforming your dreams into digital realities. Our team of seasoned professionals brings a blend of creativity, technical expertise, and unwavering dedication to every project."
 
 export const whyTitle = "Why Poprigo?"
@@ -108,14 +108,14 @@ export const promiseBoxThreeSubText = "Luna's global bookstore delivers handpick
 
 export const blogTitle = "Dive into Our Insights"
 export const blogSubTitle = (
-    <>Discover diverse perspectives, stay updated on trends, and delve<br />into insightful articles across our blog.</>
+    <>Discover diverse perspectives, stay updated on trends, and delve <br />into insightful articles across our blog.</>
 )
 
-export const contactTitle = <>Got something in mind?<br />We'd love to help.</>
+export const contactTitle = <>Got something in mind? <br />We'd love to help.</>
 export const contactSubTitle = <>Let’s get down to business and by business we mean<br />providing a packed ecomm experience.</>
 
 export const aboutPageTitle = (
-    <>We aren't just tech<br />enthusiasts; we're the<br />architects of your<br />success story.</>
+    <>We aren't just tech <br />enthusiasts; we're the <br />architects of your <br />success story.</>
 )
 export const aboutPageDescription = "Crafting digital experiences is our forte, sprinkled with design mastery, technical wizardry, and an unwavering passion for innovation. We're not just a tech team; we're your partners in creating unforgettable online experiences."
 

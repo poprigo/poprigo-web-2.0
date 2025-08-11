@@ -1,5 +1,5 @@
 /* Start Responsive */
-@media (max-width: 1280px) {
+@media (max-width: 1290px) {
   .nav-links > a {
     font-size:16px;
   }
@@ -32,6 +32,7 @@
     padding: 13px 24px;
     width: 100%;
     justify-content: center;
+    text-align: center;
     gap: 6px;
   }  
   .continueBtnText{
@@ -92,6 +93,48 @@
     font-size: 16px;
   }
   /* End: Footer */
+  /* Start: About page */
+  .about-page .ap-title-text{
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .ap-nav-text {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .ap-sub-description-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .ap-hero-image{
+    border-radius:24px;
+  }
+  .why-box {
+    border-radius:18px;
+    padding: 18px;
+    height: auto; 
+  }
+  .why-image{
+    height:80px;
+    width:80px;
+    margin-bottom: 16px;
+  }
+  .why-title-text{
+    line-height: 28px;
+    font-size: 20px;
+  }
+  .why-description-text{
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* End: About page */
+
+  /* Start: Contact page */
+  .contact-page .continueBtn {
+    max-width: 210px;
+  }
+  /* End: Contact page */
 }
 @media (max-width: 1024px) {
   .section-end-space {
@@ -215,6 +258,101 @@
     margin-bottom: 11px;
   }
   /* End: Footer */
+
+  /* Start: Service page */
+  .space-container {
+    height: 4px;
+  }
+  .service-text-container .ap-title-text{
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+  .service-text-container .ap-sub-description-text{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 12px; 
+  }
+  .service-image-container {
+    border-radius: 16px;
+    height:300px;
+  }
+  .service-text-container{
+    padding:24px;
+  }
+  .text-container{
+    padding:0 20px;
+  }
+  /* End: Service page */
+   /* Start: About page */
+  .about-page .ap-title-text{
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .ap-hero-image{
+    border-radius:16px;
+  }
+  .ap-nav-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .ap-sub-description-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .why-box-container{
+    gap:12px;
+  }
+  .why-image {
+    height: 64px;
+    width: 64px;
+    margin-bottom: 14px;
+  }
+  .why-box {
+    border-radius: 16px;
+    padding: 16px;
+  }
+  .why-title-text {
+    line-height: 24px;
+    font-size: 18px;
+  }
+  .why-box-container{
+    margin-bottom: 40px;
+  }
+  .ap-vision-container {
+      width: 90%;
+  }
+  .ap-vision-container img {
+    width: 70% !important;
+    margin-top: 40px !important;
+  }
+  /* End: About page */
+  /* Start: Contact page */ 
+   input, textarea{
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  input::placeholder, textarea::placeholder{
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .contact-title {
+      font-size: 12px;
+  }
+  .contact-value {
+    font-size: 14px;
+    margin-top: 4px;
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+.contact-details,
+.map-frame{
+  border-radius:16px;
+  height:300px;
+}
+  /* End: Contact page */
 }
 @media (max-width: 989px) {
   .nav img {
@@ -295,6 +433,26 @@
     font-size: 13px;
   }
   /* End: Footer */
+  /* Start: About page */
+  .why-box{
+    width: calc(50% - 6px);
+  }
+  .why-image{
+    align-self: flex-start;
+  }
+  /* End: About page */
+  /* Start: Contact page */
+  .form-wrapper {
+    width:65%;
+  }
+  .contact-page .text-container{
+    padding:0px;
+  }
+  .illustration-right,
+  .illustration-left{
+    background-size: contain;
+  }
+  /* End: Contact page */
 }
 @media (max-width: 768px) {
   /* Start: Promise Section */
@@ -343,6 +501,9 @@
   .footer-title-text {
     font-size: 28px;
   }
+  .icon-container {
+    gap:4px;
+  }
   .footer-box > h1 {
    font-size: 13px;
     margin-bottom: 10px;
@@ -351,6 +512,30 @@
     font-size: 13px;
   }
   /* End: Footer */
+
+  /* Start: Service page */
+  .service-text-container .ap-title-text {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .service-text-container .ap-sub-description-text {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  .service-image-container{
+    height:250px;
+  }
+  /* End: Service page */
+
+  /* Start: About page */
+  .ap-sub-description-text,
+  .ap-nav-text  {
+    font-size: 13px;
+  }
+  .ap-hero-image{
+    height: 300px;
+  }
+  /* End: About page */
 }
 @media (max-width: 750px) {
   /* Start: Mobile header menu */
@@ -375,6 +560,18 @@
     font-size: 20px;
   }
   /* End: Mobile header menu */
+
+  /* Start: Service page */
+  .service-text-container {
+    padding: 20px;
+  }
+  /* End: Service page */
+   /* Start: About page */
+  .about-page .ap-title-text{
+    font-size: 28px;
+    line-height: 34px;
+  }
+  /* End: About page */
 }
 @media (max-width: 640px) {
   .container {
@@ -497,6 +694,69 @@
     margin-bottom: 20px;
   }
   /* End: Footer */
+
+  /* Start: Service page */
+  .service-text-container,
+  .service-image-container{
+    width:100%;
+  }
+  .service-row{
+    flex-wrap: wrap;
+    gap:24px;
+  }
+  .service-image-container {
+    height: 350px;
+    order:1;
+    border-radius:12px;
+  }
+  .service-text-container {
+    order:2;
+  }
+  .service-text-container{
+    height:100%;
+    padding:0px;
+  }
+  /* End: Service page */
+
+  /* Start: About page */
+  .ap-hero-image{
+    border-radius:12px;
+  }
+  .ap-container{
+    flex-wrap:wrap;
+  }
+  .ap-title-cover,
+  .ap-hero-image {
+    flex:auto;
+  }
+  .ap-hero-image {
+    height: 250px;
+    margin-top: 24px;
+  }
+  .about-page .ap-title-text br{
+    display: none;
+  }
+  .about-page .ap-flex-gap {
+    padding: 6px;
+  }
+  .why-description-text {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .why-box{
+    border-radius: 12px;
+  }
+  .why-box-container{
+    margin-bottom: 30px;
+  }
+  .ap-vision-container {
+      width: 100%;
+  }
+  .ap-vision-container img {
+    width: 100% !important;
+    margin-top: 30px !important;
+}
+  /* End: About page */
 }
 @media (max-width: 575px) {
   /* Start: Mobile header menu */
@@ -510,6 +770,25 @@
     width: 100%;
   }
   /* End: Service Section */
+
+  /* Start: Service page */
+  .service-image-container {
+    height: 300px;
+  }
+  .service-row{
+    gap:16px;
+  }
+  /* End: Service page */
+
+  /* Start: Contact page */
+  .illustration-right,
+  .illustration-left{
+    display: none;
+  }
+  .form-wrapper{
+    width:100%;
+  }
+  /* End: Contact page */
 }
 @media (max-width: 430px) {
   /* Start: Mobile header menu */
@@ -519,9 +798,19 @@
   /* End: Mobile header menu */
 
   /* Start: Client section */
-  .client-box {
-    width: 100%;
+  .client-box .description-text {
+    font-size: 13px;
+    line-height: 16px;
   }
+    .client-box-container {
+      gap:8px;
+    }
+  .client-box {
+    width: calc(50% - 4px);
+  } 
+  .client-image {
+    height: 64px;
+}
   /* End: Client section */
 
   /* Start: Brand section */
@@ -568,6 +857,21 @@
     padding: 10px;
   }
   /* End: Blog Section */
+  /* Start: About page */
+  .why-box{
+    width: 100%;
+  }
+  .why-title-text{
+    text-align: center;
+  }
+  .why-image{
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  .why-description-text{
+    text-align: center;
+  }
+  /* End: About page */
 }
 @media (max-width: 400px) {
   .title-text br{
@@ -581,4 +885,21 @@
     display: none;
   }
   /* End: Footer */
+  /* Start: Service page */
+  .service-image-container {
+    height: 240px;
+  }
+  .service-text-container .ap-title-text {
+    font-size: 20px !important;
+    line-height: 26px !important;
+}
+  /* End: Service page */
+  /* Start: About page */
+  .ap-vision .text-container{
+    padding:0px;
+  }
+  .ap-vision .title-text br{
+    display: block;
+  }
+  /* End: About page */
 }
