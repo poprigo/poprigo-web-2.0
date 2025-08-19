@@ -80,8 +80,32 @@ main {
   cursor: pointer;
   color: var(--sub-text-color);
   transition: all 0.3s ease;
+  position: relative;
+  overflow:hidden;
+  z-index:10;
 }
-
+.continueBtn:after,
+.continueBtnWhite:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 100vw;
+  transform: translateY(101%);
+  background-color:#EFB61B;
+  transition-duration: .3s;
+  transition-property: all;
+  z-index: -10;
+  border: 1px solid transparent;
+}
+.continueBtn:hover {
+  border:1px solid #EFB61B;
+}
+.continueBtn:hover:after {
+  transform: translateY(0);
+}
 .continueBtnWhite {
   margin-top: 2vw;
   padding: 1vw;
@@ -96,9 +120,17 @@ main {
   cursor: pointer;
   border: 0.1vw solid var(--second-background-color);
   color: var(--second-background-color);
+  position: relative;
+  overflow:hidden;
+  z-index:10;
 }
-
+.continueBtnWhite:hover:after {
+  transform: translateY(0);
+}
 .continueBtnWhite:hover {
+  border:1px solid #EFB61B;
+}
+/* .continueBtnWhite:hover {
   border: 0.1vw solid var(--second-background-color);
   background-color: var(--second-background-color);
   color: var(--sub-text-color);
@@ -108,7 +140,7 @@ main {
   border: 0.1vw solid var(--sub-text-color);
   background-color: var(--sub-text-color);
   color: var(--second-background-color);
-}
+} */
 
 .continueBtnText {
   font-size: 1.4vw;
@@ -135,17 +167,23 @@ main {
 .mobile-slide-menu {
   position: fixed;
   top: 0;
-  right: -100%; /* hide outside screen */
-  width: 50%;
+  right: 0px;
+  width: 100%;
   height: 100vh;
   background-color: #fff;
+  padding: 90px 20px 30px;
+  transition: all 0.7s ease-in-out;
+  -webkit-clip-path: circle(0 at 100% 0);
+  clip-path: circle(0 at 100% 0);
+  z-index: 1000;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+}
+.mobile-menu-inner{
+  width:90%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 30px 20px;
-  transition: right 0.3s ease-in-out;
-  z-index: 1000;
-  box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+  margin: 0 auto;
 }
 .mobile-slide-menu .nav-link {
   text-decoration: none;
@@ -159,17 +197,19 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
-  opacity: 0.1;
-  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+a.site-logo {
+    z-index: 1001;
 }
 .nav-link.active {
   font-weight: 600 !important;
 }
-
 /* When open, slide in */
 .mobile-slide-menu.open {
-  right: 0;
+    -webkit-clip-path: circle(160% at 100% 0);
+    clip-path: circle(160% at 100% 0);
 }
 
 /* Navigation Bar Start */
@@ -208,8 +248,29 @@ main {
   width: 10vw;
   border-radius: 100px;
   cursor: pointer;
+  position: relative;
+  z-index: 10;
+  overflow:hidden;
+  border:1px solid #EFB61B;
 }
-
+.talk-btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 100vw;
+  transform: translateY(101%);
+  background-color:#fff;
+  transition-duration: .3s;
+  transition-property: all;
+  z-index: -10;
+  border: 1px solid transparent;
+}
+.talk-btn:hover:after {
+  transform: translateY(0);
+}
 .talk-btn-text {
   color: #232323;
   font-size: 0.9vw;
@@ -1246,6 +1307,7 @@ textarea:focus {
   justify-content: center;
   align-items: center;
   margin: 0 0.5vw;
+  cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 

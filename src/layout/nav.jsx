@@ -9,25 +9,42 @@ import Button from "../components/button";
 
 export default function Nav() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [shouldShowOverlay, setShouldShowOverlay] = useState(false);
   const lenis = useLenis();
 
+  // Handle menu toggle
   const toggleMobileMenu = () => {
     const newState = !isMobileMenuOpen;
-    setIsMobileMenuOpen(newState);
-    if (lenis) {
-      if (newState) lenis.stop();
-      else lenis.start();
+
+    if (newState) {
+      setIsMobileMenuOpen(true);
+      setShouldShowOverlay(true);
+      lenis?.stop();
+    } else {
+      setIsMobileMenuOpen(false);
+      lenis?.start();
+
+      // Wait until the menu closing animation finishes (0.7s)
+      setTimeout(() => {
+        setShouldShowOverlay(false);
+      }, 700);
     }
   };
 
+  // Close menu via link click
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
-    if (lenis) lenis.start();
+    lenis?.start();
+
+    // Wait until animation is over before hiding overlay
+    setTimeout(() => {
+      setShouldShowOverlay(false);
+    }, 700);
   };
 
   useEffect(() => {
     return () => {
-      if (lenis) lenis.start();
+      lenis?.start();
     };
   }, [lenis]);
 
@@ -35,7 +52,7 @@ export default function Nav() {
     <div className="container">
       <div className="nav">
 
-        {/* Desktop Left Links */}
+        {/* Left */}
         <div className="nav-links desktop-nav">
           <NavLink href="/" text="Home" />
           <NavLink href="/about" text="About Us" />
@@ -45,31 +62,35 @@ export default function Nav() {
         {/* Logo */}
         <Logo />
 
-        {/* Desktop Right Links */}
+        {/* Right */}
         <div className="nav-links desktop-nav" style={{ justifyContent: "flex-end" }}>
           <NavLink href="/blog" text="Blog" />
           <NavLink href="/contact" text="Contact" />
           <Button link="/contact" title="LETS TALK" />
         </div>
 
-        {/* Hamburger Icon */}
+        {/* Mobile Hamburger */}
         <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
           <i className={`fa ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
         </div>
       </div>
 
-      {/* Mobile Slide-in Menu */}
+      {/* Mobile Menu */}
       <div className={`mobile-slide-menu ${isMobileMenuOpen ? 'open' : ''}`}>
-        <NavLink href="/" text="Home" onClick={closeMobileMenu} />
-        <NavLink href="/about" text="About Us" onClick={closeMobileMenu} />
-        <NavLink href="/service" text="Service" onClick={closeMobileMenu} />
-        <NavLink href="/blog" text="Blog" onClick={closeMobileMenu} />
-        <NavLink href="/contact" text="Contact" onClick={closeMobileMenu} />
-        <Button link="/contact" title="LETS TALK" onClick={closeMobileMenu} />
+        <div className="mobile-menu-inner">
+          <NavLink href="/" text="Home" onClick={closeMobileMenu} />
+          <NavLink href="/about" text="About Us" onClick={closeMobileMenu} />
+          <NavLink href="/service" text="Service" onClick={closeMobileMenu} />
+          <NavLink href="/blog" text="Blog" onClick={closeMobileMenu} />
+          <NavLink href="/contact" text="Contact" onClick={closeMobileMenu} />
+          <Button link="/contact" title="LETS TALK" onClick={closeMobileMenu} />
+        </div>
       </div>
 
       {/* Overlay */}
-      {isMobileMenuOpen && <div className="overlay" onClick={toggleMobileMenu}></div>}
+      {shouldShowOverlay && (
+        <div className="overlay" onClick={toggleMobileMenu}></div>
+      )}
     </div>
   );
 }
@@ -91,13 +112,13 @@ const NavLink = ({ href, text, onClick }) => {
 };
 
 const Logo = () => (
-  <Link href="/">
-      <Image
-        src="/assets/images/logo.png"
-        alt="poprigo-logo"
-        width={50}
-        height={50}
-        style={{ cursor: 'pointer' }}
-      />
+  <Link href="/" className="site-logo">
+    <Image
+      src="/assets/images/logo.png"
+      alt="poprigo-logo"
+      width={50}
+      height={50}
+      style={{ cursor: 'pointer' }}
+    />
   </Link>
 );

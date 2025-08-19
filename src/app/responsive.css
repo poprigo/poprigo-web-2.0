@@ -499,8 +499,11 @@
 
   /* Start: Service Section */
    .service-list .sub-title{
-    font-size:16px;
-    line-height: 20px;
+    font-size:18px;
+    line-height: 26px;
+  }
+  .service-list div:first-child .sub-title{
+    margin-top:0px;
   }
   /* End: Service Section */
 
@@ -758,6 +761,9 @@
    .nav img {
     width: 40px;
    }
+   .mobile-menu-inner{
+    width:100%;
+  }
   /* End: Mobile header menu */
 
   /* Start: Hero section */
@@ -769,7 +775,7 @@
   }
   .title-text {
     font-size: 28px;
-    line-height: 32px;
+    line-height: 34px;
   }
   .sub-description-text br {
     display: none;
@@ -980,12 +986,6 @@
   /* End: Blog detail page */
 }
 @media (max-width: 575px) {
-  /* Start: Mobile header menu */
-  .mobile-slide-menu{
-    width:70%;
-  }
-  /* End: Mobile header menu */
-
   /* Start: Service Section */
   .blog-box {
     width: 100%;
